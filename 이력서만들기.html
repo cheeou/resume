@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이력서</title>
+    <style>
+        /* 전역 폰트 설정 */
+        * {
+            font-family: Pretendard;
+        }
+        article {
+            padding: 50px;
+        }
+        article > h1 {
+            position: absolute;
+            clip-path: inset(50%);
+            width: 1px;
+            height: 1px;
+            overflow: hidden;
+        }
+
+        .container {
+            display: flex;
+            align-items: flex-start; /* 상단 정렬 */
+            gap: 20px; /* 요소 간의 간격 */
+        }
+
+        img {
+            width: 200px;
+            border-radius: 50%;
+            padding: 10px;
+        }
+
+        .info {
+            width: 100%;
+            padding: 10px;
+
+        }
+
+
+        .en-name {
+            color: #3075FF;
+            font-size: 0.5em;
+            font-weight: 400;
+        }
+
+        hr {
+            margin: 1em 0;
+            border: none;
+            border-top: 1px solid #ccc;
+            width: 100%;
+        }
+
+
+
+
+        
+        /* Introduction 
+        ==== start ===== */
+
+        .intro-table {
+            margin-top: 50px;
+        }
+
+        .intro-table .intro-title:first-child,
+        .project-title:first-child {
+            margin: 1em 0;
+            border: none;
+            border-bottom: 1px solid #2E6FF2;
+            width: 100%;
+        }
+
+        .intro-title, 
+        .project-title {
+            font-size: 17px;
+            font-weight: 600;
+            color: #2E6FF2;
+            padding-bottom: 15px;
+        }
+        
+        .intro-info {
+            padding-top: 10px;
+            line-height: 1.5em;
+        }
+        .skill-title {
+            display: inline-block;
+            font-size: 17px;
+            font-weight: 600;
+            color: #2E6FF2;
+            margin-right: 10px;
+            
+            
+            
+        }
+        .python-tag,
+        .django-tag {
+            display: inline-block;
+            width: 86px;
+            height: 30px;
+            border: 1px solid black;
+            background-color: #F3F5FA;
+            border-color: #D9DBE0;
+            border-radius: 50px; 
+            padding-top: 10px;
+            text-align: center;
+            color: #2E6FF2;
+
+        }
+        ul {
+            padding: 0;
+        }
+
+        /* Introduction 
+        ==== end ===== */
+
+
+        .info {
+            position: relative;
+        }
+
+        .ko-name::after {
+            border-bottom: 1px solid #2E6FF2;
+ 
+        }
+
+        /* th text 가운데 정렬 */
+        .profile-table th { 
+            text-align: left;
+        }
+
+        .ko-name {
+            font-size: 27px;
+            padding-bottom: 10px;
+        }
+
+
+        .phone-num {
+            padding-top: 10px  ;
+        }
+
+        .profile-table {
+        border-collapse: separate;
+        border-spacing: 10px 10px;
+        }
+
+        .blog {
+            background-color: #F3F5FA;
+            display: inline-block;
+            border-radius: 10px;
+        }
+
+        .blog img, .links img {
+            width: 20px;
+            padding: 0;
+            position: relative;
+            top: 5px;
+        }
+
+
+        .project-subtitle {
+            display: block;
+            background: #5C8EF226;
+            width: 90px;
+            text-align: center;
+            color: #2E6FF2;
+            font-weight: 700;
+            margin-top: 10px;
+        }
+
+        .links {
+            background: #5C8EF226;
+            height: 40px;
+            padding-top: 10px;
+            padding-left: 5px;    
+            margin-bottom: 10px;       
+            border-radius: 10px;
+        }
+        
+    </style>
+</head>
+<body>
+    <article>
+        <h1>나의 이력서</h1>
+        <div class="container">
+            <img src="img/html_jeans.png" alt="동그란 모양의 나의 이력서 사진">
+            <div class="info">
+                <table class="profile-table">
+                    <tr class="name">
+                        <th class="ko-name">장지우 <span class="en-name">Jiwoo</span></th>
+                    </tr>
+                    
+                    <tr>
+                        <td class="phone-num">전화번호</td>
+                        <td>010-xxxx-xxxx</td>
+                    </tr>
+                    <tr>
+                        <td>이메일</td>
+                        <td>jiwoo@abc.com</td>
+                    </tr>
+                    <tr>
+                        <td>경력사항</td>
+                        <td>신입</td>
+                    </tr>
+                    <tr class="blog">
+                        <td colspan='2'><img src="img/icon-Link.png" alt="">기술 블로그</td>
+                        <td>https://www.abc.kr</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <table class="intro-table">
+            <tr>
+                <td class="intro-title">Introduction</td>
+            </tr>
+            <tr>
+                <td class="intro-info">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Nullam vehicula magna ac purus posuere, non tempus nulla eleifend. 
+                    Fusce ac justo vitae velit malesuada auctor. 
+                    Maecenas tincidunt metus ut ex auctor, non tincidunt arcu efficitur. 
+                    Sed at felis et sapien lacinia tincidunt. 
+                    Proin imperdiet massa nec diam scelerisque, et euismod nunc hendrerit. 
+                    Nam efficitur mi id dolor tincidunt, sed facilisis felis viverra. 
+                    Donec vitae ultricies velit.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Nullam vehicula magna ac purus posuere, non tempus nulla eleifend. 
+                    Fusce ac justo vitae velit malesuada auctor. 
+                    Maecenas tincidunt metus ut ex auctor, non tincidunt arcu efficitur. 
+                    Sed at felis et sapien lacinia tincidunt. 
+                    Proin imperdiet massa nec diam scelerisque, et euismod nunc hendrerit. 
+                    Nam efficitur mi id dolor tincidunt, sed facilisis felis viverra. 
+                    Donec vitae ultricies velit.</p>
+                </td>
+            </tr>
+
+            </tr>
+        </table>
+        <ul>
+            <li class="skill-title">Skills</li>
+            <li class="python-tag">Python</li>
+            <li class="django-tag">Django</li>
+        </ul>
+
+        <table class="project-table">
+            <tr>
+                <td class="project-title">Project</td>
+            </tr>
+            <tr>
+                <td class="project-subtitle">프로젝트 예시</td>
+            </tr>
+            <tr>
+                <td class="project-details">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vehicula magna ac purus posuere, non tempus nulla eleifend. Fusce ac justo vitae velit malesuada auctor. Maecenas tincidunt metus ut ex auctor, non tincidunt arcu efficitur. Sed at felis et sapien lacinia tincidunt. Proin imperdiet massa nec diam scelerisque, et euismod nunc hendrerit. Nam efficitur mi id dolor tincidunt, sed facilisis felis viverra. Donec vitae ultricies velit. </p>
+                </td>
+            </tr>
+        </table>
+        <div class="links">
+           <span><img src="img/icon-Link.png" alt="">깃허브 링크</span>
+           <span>https://github.com/weniv</span> 
+        </div>
+        <div class="links">
+            <span><img src="img/icon-Link.png" alt="">깃허브 링크</span>
+            <span>https://github.com/weniv</span> 
+         </div>
+         <div class="links">
+            <span><img src="img/icon-Link.png" alt="">깃허브 링크</span>
+            <span>https://github.com/weniv</span> 
+         </div>
+    </article>
+</body>
+</html>
